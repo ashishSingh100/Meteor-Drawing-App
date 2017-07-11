@@ -1,0 +1,55 @@
+<head>
+  <title>1-wall</title>
+    
+   
+</head>
+
+<body>
+  {{> wall}}
+    
+    
+
+</body>
+
+<template name="wall">
+
+    
+    
+  <h1>{{title}}</h1>
+   <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Draw Me</a>
+    </div>
+      <div class="nav navbar-nav">
+  <button class='clear btn'><span class="glyphicon glyphicon-remove"></span></button>
+      <button class='save btn'><span class="glyphicon glyphicon-save"></span></button>
+          <button class='thicker btn'><span class="glyphicon glyphicon-plus"></span></button>
+  <button class='thinner btn'><span class="glyphicon glyphicon-minus"></span></button>
+  <button class='red'></button>
+  <button class='blue'></button>
+  <button class='green'></button>
+      <button class='pink'></button>
+      <button class='yellow'></button>
+      <button class='orange'></button>
+  <button class='black'></button>
+  <button class='white'></button>
+  <button class='brown'></button>
+  <button class='aqua'></button>
+  <button class='purple'></button>
+          <button class='gold'></button>
+  <button class='gray'></button>
+  <button class='crimson'></button>
+  </div>
+       </div>
+</nav>
+    <div id="can" class='container'>
+       
+{{> canvas}}
+    </div>
+
+</template>
+
+<template name="canvas">
+  <div id='canvas'></div>
+</template>
